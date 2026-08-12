@@ -1,0 +1,14 @@
+{
+  "name": "delivery-tracker-signup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pagina publica de registro de cuentas para Delivery Tracker -- guarda el alta y arranca el mes de prueba; el cobro con Mercado Pago se conecta despues, ver server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2"
+  }
+}

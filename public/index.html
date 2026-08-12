@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delivery Tracker — Registro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Llevá tus pedidos y tus deliverys en un solo lugar</h1>
+      <p class="subtitle">Registro de pedidos, catálogo online, mapa en vivo de tus deliverys y cierre de caja diario — todo en un panel simple.</p>
+      <span class="trial-badge">🎁 1 mes de prueba gratis</span>
+    </header>
+
+    <div class="features">
+      <div class="feature">
+        <h3>📋 Pedidos</h3>
+        <p>Cargá pedidos a mano o de a muchos, asigná deliverys y seguí el estado de cada uno.</p>
+      </div>
+      <div class="feature">
+        <h3>🗺️ Mapa en vivo</h3>
+        <p>Tus deliverys comparten su ubicación desde el celular, sin instalar nada.</p>
+      </div>
+      <div class="feature">
+        <h3>🛒 Pedido online</h3>
+        <p>Tus clientes arman su pedido desde un link propio, con tu catálogo y tu marca.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Caja y análisis</h3>
+        <p>Cierre de caja diario, gastos a proveedores e historial de ventas.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div id="signup-form-wrap">
+        <h2>Registrá tu negocio</h2>
+        <p class="hint">Empezás con un mes de prueba gratis. Después de completar el formulario nos contactamos para coordinar la puesta en marcha.</p>
+        <div class="field">
+          <label for="business-name">Nombre del negocio</label>
+          <input type="text" id="business-name" placeholder="Ej: Sushi Central">
+        </div>
+        <div class="field">
+          <label for="contact-name">Tu nombre</label>
+          <input type="text" id="contact-name" placeholder="Ej: Alejandro">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Ej: tu@negocio.com">
+        </div>
+        <div class="field">
+          <label for="phone">Celular</label>
+          <input type="text" id="phone" placeholder="Ej: 099 123 456">
+        </div>
+        <div class="field">
+          <label for="notes">Contanos algo de tu negocio (opcional)</label>
+          <textarea id="notes" placeholder="Ej: cuántos deliverys tenés, qué usás hoy para gestionar pedidos..."></textarea>
+        </div>
+        <button id="submit-btn" type="button" class="primary">Empezar mi prueba gratis</button>
+        <p id="status" class="status"></p>
+      </div>
+
+      <div id="confirmation" class="confirmation">
+        <div class="icon">🎉</div>
+        <h2>¡Listo!</h2>
+        <p id="confirmation-msg" class="hint"></p>
+      </div>
+    </div>
+
+    <footer>Delivery Tracker</footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
