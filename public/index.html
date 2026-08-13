@@ -5,13 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PediTrucker — Gestión de pedidos y deliverys</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="wrap">
     <nav class="topnav">
       <div class="brand">🛵 PediTrucker</div>
+      <div class="topnav-links">
+        <a href="#funciones">Funciones</a>
+        <a href="#registro">Precios</a>
+      </div>
       <div class="topnav-actions">
         <!-- Cada negocio tiene su propia instancia separada (ver README) --
              no hay todavía un login central único. Por ahora apunta a la
@@ -20,16 +24,45 @@
              negocio (ej. pedirle el nombre/subdominio antes de mandarlo a
              su login), no queda bien resuelto con un solo link fijo. -->
         <a class="topnav-link" href="https://delivery-tracker-template.onrender.com/login.html" target="_blank" rel="noopener">Iniciar sesión</a>
-        <a class="topnav-link primary" href="#signup-form-wrap">Registrarme</a>
+        <a class="topnav-link primary" href="#registro">Quiero empezar</a>
       </div>
     </nav>
-    <header>
-      <h1>Llevá tus pedidos y tus deliverys en un solo lugar</h1>
-      <p class="subtitle">Registro de pedidos, catálogo online, mapa en vivo de tus deliverys y cierre de caja diario — todo en un panel simple.</p>
-      <span class="trial-badge">🎁 1 mes de prueba gratis</span>
-    </header>
 
-    <div class="features">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Llevá tus pedidos y tus deliverys <span class="highlight">en un solo lugar</span></h1>
+        <p class="subtitle">Registro de pedidos, catálogo online, mapa en vivo de tus deliverys y cierre de caja diario — todo en un panel simple, sin planillas sueltas.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="#registro">Empezar prueba gratis</a>
+          <a class="btn-outline" href="https://delivery-tracker-template.onrender.com/pedido-cliente.html" target="_blank" rel="noopener">Ver demo →</a>
+        </div>
+        <span class="trial-badge">🎁 1 mes de prueba gratis, sin tarjeta</span>
+      </div>
+      <div class="hero-visual">
+        <div class="blob"></div>
+        <div class="mockup-card">
+          <div class="mockup-card-header">
+            <span>📋 Pedidos de hoy</span>
+            <span class="mockup-dot"></span>
+          </div>
+          <div class="mockup-row">
+            <span>#128 · Ana</span>
+            <span class="mockup-pill pill-ok">Entregado</span>
+          </div>
+          <div class="mockup-row">
+            <span>#129 · Martín</span>
+            <span class="mockup-pill pill-progress">En camino</span>
+          </div>
+          <div class="mockup-row">
+            <span>#130 · Lucía</span>
+            <span class="mockup-pill pill-wait">Preparando</span>
+          </div>
+          <div class="mockup-map">🗺️ 3 deliverys en ruta</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="funciones">
       <div class="feature">
         <h3>📋 Pedidos</h3>
         <p>Cargá pedidos a mano o de a muchos, asigná deliverys y seguí el estado de cada uno.</p>
@@ -46,9 +79,9 @@
         <h3>💰 Caja y análisis</h3>
         <p>Cierre de caja diario, gastos a proveedores e historial de ventas.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="panel">
+    <section class="panel" id="registro">
       <div id="signup-form-wrap">
         <h2>Registrá tu negocio</h2>
         <p class="hint">Empezás con un mes de prueba gratis. Después de completar el formulario nos contactamos para coordinar la puesta en marcha.</p>
@@ -81,7 +114,7 @@
         <h2>¡Listo!</h2>
         <p id="confirmation-msg" class="hint"></p>
       </div>
-    </div>
+    </section>
 
     <footer>PediTrucker</footer>
   </div>
