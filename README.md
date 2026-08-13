@@ -1,6 +1,8 @@
-# Delivery Tracker — Registro
+# PediTrucker — Página principal
 
-Página pública de alta para negocios interesados en [DeliveryTracker-Template](../DeliveryTracker-Template) — junta los datos de contacto y arranca el mes de prueba. Es intencionalmente simple: no cobra nada todavía (ver "Sobre el cobro" más abajo), la idea es tener algo funcionando ya, y conectar Mercado Pago más adelante, cuando el producto esté por salir a producción de verdad.
+La página pública del producto: presenta el servicio y tiene el formulario de alta para negocios interesados en [DeliveryTracker-Template](../DeliveryTracker-Template) (el panel real que usa cada negocio) — junta los datos de contacto y arranca el mes de prueba. Es intencionalmente simple: no cobra nada todavía (ver "Sobre el cobro" más abajo), la idea es tener algo funcionando ya, y conectar Mercado Pago más adelante, cuando el producto esté por salir a producción de verdad.
+
+"PediTrucker" es un nombre de trabajo, no definitivo — está en `public/index.html` (título, wordmark, footer) y en el `<h1>` del template de admin (`admin-shell.html` en el otro repo), nada más. Cambiarlo es un buscar/reemplazar en esos dos lugares.
 
 ## Cómo funciona
 
