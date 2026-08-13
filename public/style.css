@@ -29,6 +29,37 @@ body {
   padding: 60px 20px 80px;
 }
 
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.topnav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topnav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 9px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+}
+
+.topnav-link.primary {
+  background: var(--primary);
+  color: #1B1512;
+  border-color: var(--primary);
+}
+
 header {
   text-align: center;
   margin-bottom: 48px;
@@ -39,7 +70,6 @@ header {
   font-size: 1.1rem;
   letter-spacing: 0.02em;
   color: var(--primary-dark);
-  margin-bottom: 18px;
 }
 
 h1 {

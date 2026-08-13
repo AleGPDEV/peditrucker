@@ -10,8 +10,20 @@
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <nav class="topnav">
       <div class="brand">🛵 PediTrucker</div>
+      <div class="topnav-actions">
+        <!-- Cada negocio tiene su propia instancia separada (ver README) --
+             no hay todavía un login central único. Por ahora apunta a la
+             única instancia real que existe (la demo del template);
+             cuando haya más de un cliente, esto tiene que resolverse por
+             negocio (ej. pedirle el nombre/subdominio antes de mandarlo a
+             su login), no queda bien resuelto con un solo link fijo. -->
+        <a class="topnav-link" href="https://delivery-tracker-template.onrender.com/login.html" target="_blank" rel="noopener">Iniciar sesión</a>
+        <a class="topnav-link primary" href="#signup-form-wrap">Registrarme</a>
+      </div>
+    </nav>
+    <header>
       <h1>Llevá tus pedidos y tus deliverys en un solo lugar</h1>
       <p class="subtitle">Registro de pedidos, catálogo online, mapa en vivo de tus deliverys y cierre de caja diario — todo en un panel simple.</p>
       <span class="trial-badge">🎁 1 mes de prueba gratis</span>
